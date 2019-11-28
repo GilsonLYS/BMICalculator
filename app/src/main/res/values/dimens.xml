@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="img">50dp</dimen>
+    <dimen name="title">100dp</dimen>
+    <dimen name="topTitle">50dp</dimen>
+    <dimen name="leftTitle">30dp</dimen>
+    <dimen name="ins">30dp</dimen>
+    <dimen name="button">60dp</dimen>
+    <dimen name="leftbutton">40dp</dimen>
+</resources>

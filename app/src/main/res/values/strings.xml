@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BMICalculator</string>
+    <string name="emptyImg" />
+    <string name="totBmi">Your BMI</string>
+    <string name="weight">Weight :</string>
+    <string name="height">Height(m) :</string>
+    <string name="cal">Calculate</string>
+    <string name="res">Reset</string>
+</resources>

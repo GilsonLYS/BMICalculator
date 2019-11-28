@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/img"
+        android:contentDescription="@string/emptyImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/empty" />
+
+    <TextView
+        android:id="@+id/totBmi"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/totBmi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgResult" />
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="@dimen/title"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/leftTitle"
+        android:layout_marginTop="@dimen/topTitle"
+        android:text="@string/weight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totBmi" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="@dimen/title"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/leftTitle"
+        android:layout_marginTop="@dimen/topTitle"
+        android:text="@string/height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight" />
+
+    <EditText
+        android:id="@+id/insWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ins"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/weight"
+        app:layout_constraintTop_toBottomOf="@+id/totBmi" />
+
+    <EditText
+        android:id="@+id/insHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ins"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/insWeight" />
+
+    <Button
+        android:id="@+id/calbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/leftbutton"
+        android:layout_marginTop="@dimen/button"
+        android:text="@string/cal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insHeight" />
+
+    <Button
+        android:id="@+id/resbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button"
+        android:text="@string/res"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/calbtn"
+        app:layout_constraintTop_toBottomOf="@+id/insHeight" />
+</androidx.constraintlayout.widget.ConstraintLayout>
